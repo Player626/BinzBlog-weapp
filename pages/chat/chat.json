@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "i-button": "../../dist/iview/button/index",
+    "i-message": "../../dist/iview/message/index",
+    "i-input": "../../dist/iview/input/index",
+    "i-toast": "../../dist/iview/toast/index"
+  },
+  "navigationBarTitleText": "❤聊天室"
+}

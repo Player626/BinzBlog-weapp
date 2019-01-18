@@ -1,0 +1,28 @@
+<!--pages/article/search.wxml-->
+<!-- 操作条 -->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <text>搜索结果</text>
+    </navigator>
+  </view>
+</view>
+<!-- 文章列表 -->
+<view class="cu-card article no-card" wx:for="{{list}}" bindtap='info' data-id='{{item.id}}'>
+  <view class="cu-item shadow">
+    <view class="title text-cut">{{item.title}}</view>
+    <view class="content">
+      <image src="{{item.list_pic}}" mode="aspectFill"></image>
+      <view class="desc">
+        <view class='text-content'>{{item.desc}}</view>
+        <view>
+          <view class='cu-tag  light sm round icon-time'>{{item.created_at}}</view>
+          <view class='cu-tag  light sm round icon-attention'>{{item.read_count}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 加载提示 -->
+<i-toast id="toast" />

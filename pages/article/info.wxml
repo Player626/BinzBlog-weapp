@@ -1,0 +1,22 @@
+<!--pages/article/info.wxml-->
+<!-- 操作条 -->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <text>{{info.title}}</text>
+    </navigator>
+  </view>
+</view>
+<!-- 加载条 -->
+<view class='load-progress {{loadProgress!=0?"show":"hide"}}' style="top:{{CustomBar}}px;">
+  <view class='load-progress-bar bg-green' style="transform: translate3d(-{{100-loadProgress}}%, 0px, 0px);"></view>
+  <view class='load-progress-spinner text-green'></view>
+</view>
+<!--引入towxml模版入口文件，并使用模版-->
+<import src="../../towxml/entry.wxml"/>
+<template is="entry" data="{{...article}}"/>
+<!-- 评论系统WxComment -->
+<view class="WxComment">
+  <WxComment tipOne="Binz Blog " tipTwo="Powered by http://blog.gaobinzhan.com" submitBtnText="评论" articleTitle="{{info.title}}" articleID="{{info.id}}" articleURL="http://blog.gaobinzhan.com/article/{{info.id}}" contentLen='1' theme="light"></WxComment>
+</view>

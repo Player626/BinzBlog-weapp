@@ -1,0 +1,11 @@
+<!--pages/center/appreciate.wxml-->
+<!-- 操作条 -->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <text>赞赏作者</text>
+    </navigator>
+  </view>
+</view>
+<image bindtap='img' style="width:750rpx;height:750rpx;" src="../../static/image/appreciate.jpg"></image>

@@ -1,0 +1,27 @@
+<!--pages/center/about.wxml-->
+<!-- 操作条 -->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <text>关于</text>
+    </navigator>
+  </view>
+</view>
+<view class="margin-xl padding-xl bg-white radius shadow-lg">
+  <!-- <view class='flex justify-center'>
+    关于BinzBlog
+  </view>
+  <view class="flex justify-center text-lg">
+    只是学习过程中的一个寄托，一个港湾，一个承载学习过程的地方。
+    与需要的人分享，与一起奋斗的人共勉。
+  </view> -->
+  <view class='flex-sub text-center'>
+      <view class='text-lg padding'>
+        <text class='text-grey'>关于BinzBlog</text>
+      </view>
+      <view class='padding text-black'>
+      只是学习过程中的一个寄托，一个港湾，一个承载学习过程的地方。与需要的人分享，与一起奋斗的人共勉。
+      </view>
+    </view>
+</view>

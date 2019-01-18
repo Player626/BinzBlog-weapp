@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/chat/chat",
+    "pages/article/index",
+    "pages/article/info",
+    "pages/article/search",
+    "pages/center/index",
+    "pages/center/history",
+    "pages/center/author",
+    "pages/center/about",
+    "pages/center/logs",  
+    "pages/center/appreciate",    
+    "pages/chat/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Binz Blog",
+    "navigationBarTextStyle":"black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "selectedColor": "#0094F3",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"static/image/basics.png",
+        "selectedIconPath":"static/image/basics_cur.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/article/index",
+        "iconPath": "static/image/component.png",
+        "selectedIconPath": "static/image/component_cur.png",
+        "text": "博文"
+      },
+      {
+        "pagePath": "pages/chat/index",
+        "iconPath": "static/image/plugin.png",
+        "selectedIconPath": "static/image/plugin_cur.png",
+        "text": "聊天室"
+      },
+      {
+        "pagePath": "pages/center/index",
+        "iconPath": "static/image/about.png",
+        "selectedIconPath": "static/image/about_cur.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

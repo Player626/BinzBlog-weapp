@@ -1,0 +1,38 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 234rpx;
+  height: 234rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.blog_name{
+  font-weight: bold;
+  font-size: 50rpx;
+  color:rgb(97, 129, 148);
+  margin-top: 35rpx;
+}
+.qq{
+  font-size: 30rpx;
+  color:rgb(97, 129, 148);
+  margin-top: 35rpx;
+}
+.motto{
+  font-size: 30rpx;
+  color:rgb(97, 129, 148);
+  margin-top: 35rpx;
+}

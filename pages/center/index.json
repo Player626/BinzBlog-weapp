@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "i-button": "../../dist/iview/button/index",
+    "i-message": "../../dist/iview/message/index",
+    "i-divider": "../../dist/iview/divider/index",
+    "i-cell-group": "../../dist/iview/cell-group/index",
+    "i-cell": "../../dist/iview/cell/index",
+    "i-spin": "../../dist/iview/spin/index",
+    "i-toast": "../../dist/iview/toast/index"
+  },
+  "navigationBarTitleText": "个人中心"
+}

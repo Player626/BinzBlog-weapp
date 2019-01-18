@@ -1,0 +1,75 @@
+<!--pages/chat/chat.wxml-->
+<!-- 操作条 -->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+    </navigator>
+    <view class='content'>
+      <text class='icon-title text-{{statu_color}}'></text>聊天室
+    </view>
+  </view>
+</view>
+<!-- 消息列表 -->
+<view wx:for="{{list}}" class="cu-chat">
+<!-- 自己的消息 -->
+  <view class="cu-item self" wx:if="{{item.openid == openid}}">
+    <view class="main" wx:if="{{item.type == 'image'}}">
+      <image src="{{item.imageUrl}}" bindtap='img' data-src='{{item.imageUrl}}' class='radius' mode="widthFix"></image>
+    </view>
+    <view class="main" wx:else>
+      <view class='content bg-green shadow-blur'>
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+    <view class="cu-avatar radius" style="background-image:url({{item.avatarUrl}});"></view>
+    <view class='date'>{{item.date}}</view>
+  </view>
+<!-- 别人的消息 -->
+  <view class="cu-item" wx:if="{{item.openid != openid}}">
+    <view class="cu-avatar radius" style="background-image:url({{item.avatarUrl}});"></view>
+    <view class="main" wx:if="{{item.type == 'image'}}">
+      <image src="{{item.imageUrl}}" bindtap='img' data-src='{{item.imageUrl}}' class='radius' mode="widthFix"></image>
+    </view>
+    <view class="main" wx:else>
+      <view class='content shadow'>
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+    <view class='date '>{{item.date}}</view>
+  </view>
+</view>
+<!-- 消息发送 -->
+<view class="cu-bar foot input">
+  <view class='action'>
+    <text class='icon-peoplelist text-grey' bindtap="showModal" data-target="DrawerModalL"></text>
+    <text class='icon-picfill text-grey' bindtap='didPressChooesImage'></text>
+  </view>
+  <input class='solid-bottom' bindconfirm="send" confirm-type='send' bindinput="input" value='{{message}}' maxlength="300" cursor-spacing="10"></input>
+  <!-- <view class='action'>
+    <text class='icon-emojifill text-grey'></text>
+  </view> -->
+  <button bindtap='send' class='cu-btn bg-green shadow-blur'>发送</button>
+</view>
+<!-- 在线列表 -->
+<view class="cu-modal drawer-modal justify-start {{modalName=='DrawerModalL'?'show':''}}" bindtap='hideModal'>
+  <view class="cu-dialog basis-lg" catchtap style="padding-top:{{CustomBar}}px;">
+    <view class="cu-list menu menu-avatar text-left">
+      <view class="cu-item"  wx:for="{{userList}}">
+        <view class="cu-avatar round lg" style="background-image:url({{item.avatarUrl}});"></view>
+        <view class='content'>
+          <view class='text-grey'>{{item.nickName}}</view>
+          <view class='text-gray text-sm'>
+            <!-- <text class='icon-infofill text-red'></text> -->
+            {{item.date}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 全局提醒 -->
+<i-message id="message" />
+
+<!-- 轻提示 -->
+<i-toast id="toast" />

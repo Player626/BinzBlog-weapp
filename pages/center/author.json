@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "i-panel": "../../dist/iview/panel/index",
+    "i-toast": "../../dist/iview/toast/index"
+  },
+  "navigationBarTitleText": "联系作者"
+}

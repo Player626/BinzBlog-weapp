@@ -1,0 +1,12 @@
+/* pages/article/index.wxss */
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+/* page{
+  height: 100%
+} */
+.cu-card{
+  margin: 20rpx;
+}

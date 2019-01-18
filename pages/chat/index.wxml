@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<!-- 操作条 -->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <view class='content'>
+      聊天室
+    </view>
+  </view>
+</view>
+<!-- 通告栏 -->
+<i-notice-bar icon="systemprompt" speed="2000" loop class='i-notice-bar'>
+    {{notice}}
+</i-notice-bar>
+
+<view class="container">
+  <view class="userinfo">
+    <!-- <button wx:if="{{!hasUserInfo && canIUse}}"  open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击获取我的昵称 </button> -->
+    <i-button wx:if="{{!hasUserInfo && canIUse}}" bind:click="handleClick" open-type="getUserInfo" bindgetuserinfo="getUserInfo" type="ghost">点击获取我的昵称</i-button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view bindtap="toChat">
+  <!-- <button class="chat"> ♥ 聊天室 点击进入</button> -->
+  <i-button bind:click="handleClick" type="success"> ♥ 聊天室 点击进入</i-button>
+  </view>
+</view>
+
+<i-toast id="toast" />
+<!-- <i-message id="message" /> -->

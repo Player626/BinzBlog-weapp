@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<!-- 操作条 -->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <view class="cu-avatar round" style="background-image:url(https://www.test.com/img/LOGO.jpg);"></view>
+    <view class='content'>
+      BinzBlog
+    </view>
+  </view>
+</view>
+<!-- <view class="container">
+  <view class="userinfo">
+      <image class="userinfo-avatar" src="http://blog.gaobinzhan.com/uploads/avatar/user.jpg" mode="cover"></image>
+
+
+      <view wx:for="{{list}}" wx:for-index="idx" wx:for-item="item">
+        <view wx:if="{{item.key=='blog_name'}}"><text class='blog_name'>{{item.value}}</text></view>
+        <view wx:if="{{item.key=='motto'}}"><text class='motto'>{{item.value}}</text></view>
+        <view wx:if="{{item.key=='qq'}}"><text class='qq'>QQ:{{item.value}}</text></view>
+      </view>
+
+
+  </view>
+</view> -->
+<swiper class="card-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper-item wx:for="{{swiper}}" class="{{cardCur==index?'cur':''}}">
+    <view class='bg-img shadow-blur' style="background-image:url({{item.url}})"></view>
+  </swiper-item>
+</swiper>
+<!-- 最新文章 -->
+<navigator wx:for="{{list}}" url='/pages/article/info?id={{item.id}}'>
+<view class="cu-card case {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class='image'>
+      <image src="{{item.list_pic}}" mode="widthFix"></image>
+      <view class="cu-tag bg-blue">最新</view>
+      <view class='cu-bar text-cut bg-shadeBottom'>{{item.title}}</view>
+    </view>
+  </view>
+</view>
+</navigator>
+<!-- 页面加载提示 -->
+<i-toast id="toast" />

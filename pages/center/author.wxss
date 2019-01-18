@@ -1,0 +1,8 @@
+/* pages/center/author.wxss */
+.i-panel{
+  font-size: 28rpx;
+}
+.text{
+  text-decoration:underline;
+  color: #5990F7;
+}

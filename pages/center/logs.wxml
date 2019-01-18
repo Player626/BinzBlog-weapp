@@ -1,0 +1,144 @@
+<!--pages/center/logs.wxml-->
+<!-- 操作条 -->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <text>日志</text>
+    </navigator>
+  </view>
+</view>
+<!-- 关于这里 -->
+<!-- <i-panel title="关于这里" class="i-panel">
+    <view style="padding: 25rpx;">
+        <text>只是学习过程中的一个寄托，一个港湾，一个承载学习过程的地方。\n</text>
+        <text>与需要的人分享，与一起奋斗的人共勉。</text>
+    </view>
+</i-panel> -->
+
+<!-- 更新日志 -->
+<view class="cu-timeline">
+  <view class="cu-item text-blue">
+    <view class="content gradual-blue">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v2.0.2</view>
+        <view class="cu-tag line-white gradual-blue">2019/01/17</view>
+      </view>
+      <view class='margin-top'>
+        <text>1.聊天室图片点击可以预览</text>
+        <text>2.文章搜索加入提示</text>        
+        <text>3.加入赞赏和意见反馈</text>        
+        <text>4.加入自动更新</text>        
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-timeline">
+  <view class="cu-item text-blue">
+    <view class="content gradual-blue">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v2.0.1</view>
+        <view class="cu-tag line-white gradual-blue">2019/01/16</view>
+      </view>
+      <view class='margin-top'>
+        <text>2.0新版本上线</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-timeline">
+  <view class="cu-item text-blue">
+    <view class="content gradual-blue">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v1.9</view>
+        <view class="cu-tag line-white gradual-blue">2019/01/14</view>
+      </view>
+      <view class='margin-top'>
+        <text>1.加入聊天室在线列表显示\n</text>    
+        <text>2.加入聊天室发送图片功能\n</text>
+        <text>3.加入聊天室历史聊天记录\n</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-timeline">
+  <view class="cu-item text-blue">
+    <view class="content gradual-blue">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v1.8</view>
+        <view class="cu-tag line-white gradual-blue">2019/01/13</view>
+      </view>
+      <view class='margin-top'>
+        <text>1.文章列表网络延迟优化\n</text>    
+        <text>2.加入聊天室重连机制\n</text>
+        <text>3.修复聊天室切出后台断开bug\n</text> 
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-timeline">
+  <view class="cu-item text-blue">
+    <view class="content gradual-blue">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v1.7</view>
+        <view class="cu-tag line-white gradual-blue">2019/01/12</view>
+      </view>
+      <view class='margin-top'>
+        <text>1.聊天室改版\n</text>    
+        <text>1.修复聊天室bug\n</text>  
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-timeline">
+  <view class="cu-item text-blue">
+    <view class="content gradual-blue">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v1.6</view>
+        <view class="cu-tag line-white gradual-blue">2019/01/11</view>
+      </view>
+      <view class='margin-top'>
+        <text>1.用户授权优化\n</text>
+        <text>2.加入用户个人中心\n</text>
+        <text>2.加入用户浏览历史\n</text>
+        <text>3.更改首页</text>   
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-timeline">
+  <view class="cu-item text-blue">
+    <view class="content gradual-blue">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v1.5</view>
+        <view class="cu-tag line-white gradual-blue">2019/01/10</view>
+      </view>
+      <view class='margin-top'>
+        <text>1.文章列表优化\n</text>
+        <text>2.文章评论系统\n</text> 
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-timeline">
+  <view class="cu-item text-blue">
+    <view class="content gradual-blue">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v1.2</view>
+        <view class="cu-tag line-white gradual-blue">2019/01/09</view>
+      </view>
+      <view class='margin-top'>开启聊天室功能</view>
+    </view>
+  </view>
+</view>
+<view class="cu-timeline">
+  <view class="cu-item text-blue">
+    <view class="content gradual-blue">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v1.1</view>
+        <view class="cu-tag line-white gradual-blue">2019/01/08</view>
+      </view>
+      <view class='margin-top'>只是学习过程中的一个寄托，一个港湾，一个承载学习过程的地方。</view>
+    </view>
+  </view>
+</view>

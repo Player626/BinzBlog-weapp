@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "i-load-more": "../../dist/iview/load-more/index"
+  },
+  "navigationBarTitleText": "浏览历史"
+}

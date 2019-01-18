@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "i-divider": "../../../dist/iview/divider/index"
+  }
+}

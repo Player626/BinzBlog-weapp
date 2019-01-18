@@ -1,0 +1,38 @@
+<!--pages/center/author.wxml-->
+<!-- 操作条 -->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <text>联系作者</text>
+    </navigator>
+  </view>
+</view>
+<!-- 关于我 -->
+<i-panel title="关于我" class="i-panel">
+    <view style="padding: 25rpx;">普通php程序员一枚,没有高深的技术，有一颗积极向上的心.平时有空喜欢打游戏，特别是梦三❗ ❗ ❗</view>
+
+
+    <view style="padding: 25rpx;">
+        <text>很想分享些什么，无奈知识有限。\n</text>
+        <text>很想记录些什么，无奈文笔有限。\n</text>
+        <text>但终究想写点什么，毕竟记忆力有限。</text>
+    </view>
+</i-panel>
+
+<!-- 联系方式 -->
+<i-panel title="联系方式" class="i-panel">
+    <view style="padding: 20rpx;">Email: <text class='text' bindtap='copyText'>975975398@qq.com</text></view>
+</i-panel>
+<i-panel class="i-panel">
+    <view style="padding: 20rpx;">微信公众号: <text class='text' bindtap='copyText'>BinzBlog</text></view>
+</i-panel>
+<i-panel class="i-panel">
+    <view style="padding: 20rpx;">个人微信号: <text class='text' bindtap='copyText'>g2269170798</text></view>
+</i-panel>
+<i-panel class="i-panel">
+    <view style="padding: 20rpx;">个人博客: <text class='text' bindtap='copyText'>http://blog.gaobinzhan.com/</text></view>
+</i-panel>
+
+<!-- 轻提示 -->
+<!-- <i-toast id="toast" /> -->

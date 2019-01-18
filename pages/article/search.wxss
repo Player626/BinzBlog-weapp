@@ -1,0 +1,4 @@
+/* pages/article/search.wxss */
+.cu-card{
+  margin: 20rpx;
+}

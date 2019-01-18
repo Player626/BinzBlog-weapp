@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "i-toast": "../../dist/iview/toast/index"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "lighk"
+}

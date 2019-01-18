@@ -1,0 +1,7 @@
+/* pages/center/about.wxss */
+.i-panel{
+  font-size: 28rpx;
+}
+page{
+  background: #ffff
+}

@@ -1,0 +1,109 @@
+<!--pages/center/index.wxml-->
+<!-- 操作条 -->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <view class='content'>
+      个人中心
+    </view>
+  </view>
+</view>
+<!-- 用户授权 -->
+<!-- <view class="container">
+  <view class="userinfo">
+    <i-button wx:if="{{!hasUserInfo && canIUse}}" type="success" bind:click="handleClick" open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登录</i-button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view> -->
+
+<!-- <view class="margin margin-xl padding-xl radius gradual-blue shadow-blur">
+  <view class="flex justify-center">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='cu-btn round bg-blue shadow'> 授权登录 </button>
+    <block wx:else>
+      <view class='text-center'>
+        <view class="cu-avatar xl round solids" style="background-image:url({{userInfo.avatarUrl}})"></view>
+        <view class="padding">{{userInfo.nickName}}</view>
+      </view>
+    </block>
+  </view>
+    <image src='https://www.test.com/img/wave.gif' mode='scaleToFill' class='gif-black response' style='width:100%;height:100rpx'></image>
+</view> -->
+<view class='gradual-blue'>
+  <view class="flex justify-center padding-xl">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='cu-btn round bg-blue shadow'> 授权登录 </button>
+    <block wx:else>
+      <view class='text-center'>
+        <view class="cu-avatar xl round solids" style="background-image:url({{userInfo.avatarUrl}})"></view>
+        <view class="padding">{{userInfo.nickName}}</view>
+      </view>
+    </block>
+  </view>
+  <image src='https://www.test.com/img/wave.gif' mode='scaleToFill' class='gif-black response' style='width:100%;height:100rpx'></image>
+</view>
+<!-- <card class="DhCard">
+  <item class="gradual-blue shadow-blur">
+    <view class="flex justify-center">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='round bg-blue shadow'> 授权登录 </button>
+    <block wx:else>
+      <view class='text-center'>
+        <avatar class="xl round solids" style="background-image:url({{userInfo.avatarUrl}})"></avatar>
+        <view class="padding">{{userInfo.nickName}}</view>
+      </view>
+    </block>
+  </view>
+    <view class='animation-wave'>
+      <view class='wave'></view>
+    </view>
+  </item>
+</card> -->
+<!-- cell组 -->
+<!-- <i-cell-group>
+      <i-cell title="最近浏览" bind:click='history' is-link></i-cell>
+      <i-cell title="联系作者" is-link url='author'></i-cell>
+      <i-cell title="关于BinzBlog" is-link url='about'></i-cell>
+</i-cell-group> -->
+
+<!-- 卡片列表 -->
+<view class="cu-list menu sm-border card-menu">
+  <view class="cu-item arrow">
+    <navigator class='content' bindtap='history' hover-class='none'>
+      <text class='icon-time'></text>
+      <text class='text-grey'>最近浏览</text>
+    </navigator>
+  </view>
+  <view class="cu-item arrow">
+    <navigator class='content' hover-class='none' url='author'>
+      <text class='icon-friendadd text-orange'></text>
+      <text class='text-grey'>联系作者</text>
+    </navigator>
+  </view>
+  <view class="cu-item arrow">
+    <navigator class='content' hover-class='none' url='../center/logs'>
+      <text class='icon-formfill text-green'></text>
+      <text class='text-grey'>日志</text>
+    </navigator>
+  </view>
+  <view class="cu-item arrow">
+    <navigator class='content' hover-class='none' url='../center/appreciate'>
+      <text class='icon-appreciate text-red'></text>
+      <text class='text-grey'>赞赏作者</text>
+    </navigator>
+  </view>
+  <view class="cu-item arrow">
+    <button class='cu-btn content' open-type='feedback'>
+      <text class='icon-write text-cyan'></text>
+      <text class='text-grey'>意见反馈</text>
+    </button>
+  </view>
+  <view class="cu-item arrow">
+    <navigator class='content' hover-class='none' url='about'>
+      <text class='icon-read text-blue'></text>
+      <text class='text-grey'>关于BinzBlog</text>
+    </navigator>
+  </view>
+</view>
+<i-toast id="toast" />
+<!-- 全局消息提醒 -->
+<!-- <i-message id="message" /> -->

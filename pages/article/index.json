@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "文章列表",
+  "usingComponents": {
+    "i-tabs": "../../dist/iview/tabs/index",
+    "i-cell-group": "../../dist/iview/cell-group/index",
+    "i-cell": "../../dist/iview/cell/index",
+    "i-swipeout": "../../dist/iview/swipeout/index",
+    "i-tab": "../../dist/iview/tab/index",
+    "i-card": "../../dist/iview/card/index",
+    "i-notice-bar": "../../dist/iview/notice-bar/index",
+    "i-load-more": "../../dist/iview/load-more/index",
+    "i-toast": "../../dist/iview/toast/index"
+  }
+}

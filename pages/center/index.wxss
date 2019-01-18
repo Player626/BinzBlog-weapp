@@ -1,0 +1,32 @@
+/* pages/center/index.wxss */
+/* 原始样式 */
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  margin-top: -100rpx;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+} */
+image[class*="gif-"]{
+  border-radius: 6rpx;
+  display: block;
+}
+
+.gif-black{  
+  mix-blend-mode: screen;  
+}
+.gif-white{  
+  mix-blend-mode: multiply; 
+}
+.card-menu{
+  margin-top: 30rpx;
+}
