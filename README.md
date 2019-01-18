@@ -44,4 +44,4 @@ BinzBlog界面设计来自iview-weapp和ColorUI组件
 ![](http://blog.gaobinzhan.com/uploads/article/20190118/07a4a9133a10634e787ad72e98103107.jpg)
 # 联系作者
 ![](http://blog.gaobinzhan.com/uploads/article/20190118/7911b2d5134ded9578df8f0c8989481f.jpg)
-![](http://blog.gaobinzhan.com/uploads/article/20190118/7991dc8b3ea4b9fd4d0defff6eeebc07.jpg)
+![](http://blog.gaobinzhan.com/uploads/article/20190118/e9df1a7d0c055fed3dba347ba0f43a4f.png)
