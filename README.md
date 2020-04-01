@@ -40,8 +40,4 @@ BinzBlog界面设计来自iview-weapp和ColorUI组件
 * 只是学习过程中的一个寄托，一个港湾，一个承载学习过程的地方。
 
 # Demo 关注下公众号 谢谢
-![](http://blog.gaobinzhan.com/uploads/article/20190118/08907b810a2a12845410867e54c56813.jpg)
-![](http://blog.gaobinzhan.com/uploads/article/20190118/07a4a9133a10634e787ad72e98103107.jpg)
-# 联系作者
-![](http://blog.gaobinzhan.com/uploads/article/20190118/7911b2d5134ded9578df8f0c8989481f.jpg)
-![](http://blog.gaobinzhan.com/uploads/article/20190118/e9df1a7d0c055fed3dba347ba0f43a4f.png)
+![](https://qiniu.gaobinzhan.com/2020/04/01/92fec12a1e651.jpeg)
